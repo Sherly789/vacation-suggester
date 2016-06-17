@@ -11,20 +11,34 @@
   <body>
     <div class="container">
       <h1>Please answer these questions and we will give you the best suggestions to visit a place!</h1>
-      <!-- survey questions -->
+<!-- Start Survay -->
       <div id="survey">
         <form>
+<!-- your name -->
           <div class="form-group">
             <label for="name">Enter your name:</label>
             <input id="name" class="form-control" type="text"></input>
           </div>
+<!-- survey questions -->
           <h4>What is your favorite vacation destination?</h4>
-          <div class="form-group">
-            <select class="form-control" id="destination">
-              <option>City</option>
-              <option>Mountains</option>
-              <option>Beach</option>
-            </select>
+          <div class="radio">
+            <label>
+              <input type="radio" name="destination" value="City">
+              City
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="destination" value="Mountains">
+              Mountains
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="destination" value="Beach">
+              Beach
+            </label>
+          </div>
 
             <h4>Waht is your favorite activites on vacation?</h4>
             <div class="radio">
@@ -42,24 +56,73 @@
             <div class="radio">
               <label>
                 <input type="radio" name="activites" value="Tourist attractions">
-                Eating
+                Tourist attractions
               </label>
             </div>
-          </div>
 
+            <h4>Waht mode of transportaion do you prefer when you reaching your destinaion?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="transportaion" value="Foot">
+                Foot
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="transportaion" value="Car">
+                Car
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="transportaion" value="Train">
+                Train
+              </label>
+            </div>
 
+            <h4>Do you consider yourself a tourist or travler?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="person type" value="Tourist">
+                Tourist
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="person type" value="Traveler">
+                Traveler
+              </label>
+            </div>
 
-
-
-
-
+            <h4>Waht is your favorite food?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="food" value="Asian">
+                Asian
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="food" value="Italian">
+                Italian
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="food" value="Fast foods">
+                Fast foods
+              </label>
+            </div>
+<!-- submit btn -->
           <button type="submit" class="btn">SUBMIT</button>
         </form>
       </div>
+<!-- type output -->
+      <div id="output">
+      </div>
+
 
     </div>
-
-
   </body>
 
 
