@@ -1,15 +1,14 @@
 $(document).ready(function() {
-debugger;
-  $("#survey form").submit(function(event) {
-    var nameInput = $("#name").val();
-    var destinationInput = $("input:radio[name=destination]:checked").val();
-    var activitesInput = $("input:radio[name=activites]:checked").val();
-    var transportaionInput = $("input:radio[name=transportaion]:checked").val();
-    var persontypeInput = $("input:radio[name=person type]:checked").val();
-    var foodInput = $("input:radio[name=food]:checked").val();
-
-    $("#output").text("Hello " + nameInput + " you like ")
-
+  $("form#survey").submit(function(event) {
     event.preventDefault();
+    var destination = $("input:radio[name=destination]:checked").val();
+    var activites = $("input:radio[name=activites]:checked").val();
+    var transportaion = $("input:radio[name=transportaion]:checked").val();
+    var persontype = $("input:radio[name=persontype]:checked").val();
+    var food = $("input:radio[name=food]:checked").val();
+
+    $("#output").text(destination + activites + transportaion + persontype + food);
+
+
   });
 });

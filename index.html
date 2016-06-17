@@ -11,14 +11,7 @@
   <body>
     <div class="container">
       <h1>Please answer these questions and we will give you the best suggestions to visit a place!</h1>
-<!-- Start Survay -->
-      <div id="survey">
-        <form>
-<!-- your name -->
-          <div class="form-group">
-            <label for="name">Enter your name:</label>
-            <input id="name" class="form-control" type="text"></input>
-          </div>
+      <form id="survey">
 <!-- survey questions -->
           <h4>What is your favorite vacation destination?</h4>
           <div class="radio">
@@ -83,13 +76,13 @@
             <h4>Do you consider yourself a tourist or travler?</h4>
             <div class="radio">
               <label>
-                <input type="radio" name="person type" value="Tourist">
+                <input type="radio" name="persontype" value="Tourist">
                 Tourist
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="person type" value="Traveler">
+                <input type="radio" name="persontype" value="Traveler">
                 Traveler
               </label>
             </div>
@@ -114,18 +107,14 @@
               </label>
             </div>
 <!-- submit btn -->
-          <button type="submit" class="btn">SUBMIT</button>
+           <button type="submit" class="btn">SUBMIT</button>
         </form>
-      </div>
-<!-- type output -->
-      <div id="output">
+        <div id="output">
+        </div>
+
       </div>
 
 
-    </div>
+
   </body>
-
-
-
-
 </html>
