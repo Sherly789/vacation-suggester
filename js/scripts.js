@@ -7,8 +7,13 @@ $(document).ready(function() {
     var persontype = $("input:radio[name=persontype]:checked").val();
     var food = $("input:radio[name=food]:checked").val();
 
-    $("#output").text(destination + activites + transportaion + persontype + food);
-
+    if (destination==="City") {
+      $("#output").text("You should go to SF");
+    } else if (destination==="Mountains") {
+      $("#output").text("You should go to Seattle");
+    } else if (destination==="Beach") {
+      $("#output").text("You should go to Mexico");
+    }
 
   });
 });
